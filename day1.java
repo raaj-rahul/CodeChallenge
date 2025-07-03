@@ -1,4 +1,6 @@
-package day1Code;
+
+//Basics of DSA in building logics
+
 import java.util.*;
 //Check Odd or even
 public class day1 {
