@@ -46,11 +46,12 @@ public class day1 {
 		y=temp;
 		System.out.println("The swap values are:"+"x=" +x +" and " +"y=" +y);
 	}
-	
+	//nth term of AP
 	public static void nThTermAP(int a1,int a2,int p) {
 		int an=a1+(a2-a1)*(p-1);
 		System.out.println("The " +p+ " term of AP is : "+an);
 	}
+	//Sum of digits of number
 	public static void SumOfDigit(int num) {
 		int sum =0;
 		while(num!=0) {
@@ -59,6 +60,8 @@ public class day1 {
 			num=num/10;
 		}System.out.println("Sum of the digits of the given number is "+sum);
 	}
+	// reverse a number
+	
 	public static void reverse(int num1) {
 		int rev=0;
 		while(num1>0) {
