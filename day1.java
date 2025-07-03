@@ -1,6 +1,6 @@
 package day1Code;
 import java.util.*;
-
+//Check Odd or even
 public class day1 {
 	public static boolean isEven(int n) {
 		int rem = n%2;
@@ -10,15 +10,19 @@ public class day1 {
 			return false;
 		}
 	}
+	//table 
 	public static void Table(int m) {
 		for(int i=1;i<=10;i++) {
 			System.out.println(m+"*"+ i+ "=" + m*i);
 		}
 	}
+	//dice face
 	public static void DiceOpp(int f) {
 		int face=7-f;
 		System.out.println("The opposite face of "+f+" is " +face);
 	}
+
+	//sum of n natural numbers
 	public static void SumofNum(int a) {
 		int sum=0;
 		for(int i=0;i<=a;i++) {
@@ -26,6 +30,7 @@ public class day1 {
 						
 		}System.out.println("The sum of Natural numbers is:"+sum);
 	}
+	//Sum of square of natural numbers
 	public static void sumOfSq(int b) {
 		int sum=0;
 		for(int i=0;i<=b;i++) {
@@ -33,12 +38,15 @@ public class day1 {
 			
 		}System.out.println("The sum of squares of natural number: " + sum);
 	}
+
+	//swap value
 	public static void swapValue(int x, int y) {
 		int temp=x;
 		x=y;
 		y=temp;
 		System.out.println("The swap values are:"+"x=" +x +" and " +"y=" +y);
 	}
+	
 	public static void nThTermAP(int a1,int a2,int p) {
 		int an=a1+(a2-a1)*(p-1);
 		System.out.println("The " +p+ " term of AP is : "+an);
