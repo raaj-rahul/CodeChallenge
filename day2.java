@@ -54,7 +54,15 @@ public class day2 {
 		}
 		System.out.println("The no. cube count is "+count);
 	}
-	
+	static void HCF(int u, int v) {
+		int GCF=Math.min(u, v);
+		while(GCF>0) {
+			if(u%GCF==0 && v%GCF==0) {
+				break;
+			}GCF--;
+					
+		}System.out.println("The HCF of the "+u+" and "+v+" is "+GCF);
+	}
 public static void main(String[] args) {
 	Scanner sc =new Scanner(System.in);
 	System.out.println("Enter the number:");
@@ -87,5 +95,10 @@ public static void main(String[] args) {
 	System.out.println("Enter the number to check cube count:");
 	int n=sc.nextInt();
 	CubeCount(n);
+	System.out.println("Num 1");
+	int u =sc.nextInt();
+	System.out.println("Num 2");
+	int v=sc.nextInt();
+	HCF(u,v);
 }
 }
