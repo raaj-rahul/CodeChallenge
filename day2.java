@@ -1,4 +1,3 @@
-package day1Code;
 import java.util.*;
 public class day2 {
 	static void PrimeNumber(int num) {
